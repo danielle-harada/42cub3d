@@ -98,5 +98,4 @@ void	cast_all_rays(t_game *game)
 	}
 	render_sprite(game);
 	render_lifebar(game);
-	render_item(game);
 }

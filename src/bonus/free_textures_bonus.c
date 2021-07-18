@@ -57,16 +57,3 @@ void	free_life(t_game *game)
 		i++;
 	}
 }
-
-void	free_item(t_game *game)
-{
-	int	i;
-
-	i = 0;
-	while (i <= 6)
-	{
-		if (game->item_tex[i].img)
-			mlx_destroy_image(game->data.mlx, game->item_tex[i].img);
-		i++;
-	}
-}

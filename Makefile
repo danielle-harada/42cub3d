@@ -71,7 +71,6 @@ BONUS_FILES = $(SRC_BONUS)bitmap_bonus.c\
 			$(SRC_BONUS)raycasting2_bonus.c\
 			$(SRC_BONUS)raycasting3_bonus.c\
 			$(SRC_BONUS)render_life_bonus.c\
-			$(SRC_BONUS)render_item_bonus.c\
 			$(SRC_BONUS)sprites_bonus.c\
 			$(SRC_BONUS)sprites_init_bonus.c\
 			$(SRC_BONUS)sprites_utils_bonus.c\
@@ -101,7 +100,6 @@ BONUS_OBJECTS = bitmap_bonus.o\
 			raycasting2_bonus.o\
 			raycasting3_bonus.o\
 			render_life_bonus.o\
-			render_item_bonus.o\
 			sprites_bonus.o\
 			sprites_init_bonus.o\
 			sprites_utils_bonus.o\

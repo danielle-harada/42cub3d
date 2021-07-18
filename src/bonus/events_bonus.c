@@ -6,7 +6,6 @@ int	close_window(t_game *game)
 	game->sprite = NULL;
 	free_textures(game);
 	free_life(game);
-	free_item(game);
 	free(game->tex);
 	game->tex = NULL;
 	free(game->ray.dist_wall);

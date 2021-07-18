@@ -10,8 +10,6 @@ char	*type_define(int tex, int id)
 		temp = ft_strjoin("./text/sprites/sprite", type);
 	else if (tex == LIFE)
 		temp = ft_strjoin("./text/textures/hud/hearts_", type);
-	else if (tex == ITEM)
-		temp = ft_strjoin("./text/item/item_", type);
 	free(type);
 	type = ft_strjoin(temp, ".xpm");
 	free(temp);
@@ -60,30 +58,6 @@ void	load_life(t_game *game)
 				&game->life_tex[i].bpp, &game->life_tex[i].l_len,
 				&game->life_tex[i].endian);
 		if (!(game->life_tex[i].addr))
-			return_error(-22);
-		i++;
-		free(type);
-		type = NULL;
-	}
-}
-
-void	load_item(t_game *game)
-{
-	int		i;
-	char	*type;
-
-	i = 0;
-	while (i <= 6)
-	{
-		type = type_define(ITEM, i);
-		game->item_tex[i].img = mlx_xpm_file_to_image(game->data.mlx, type,
-				&game->item_tex[i].tex_width, &game->item_tex[i].tex_height);
-		if (!(game->item_tex[i].img))
-			return_error(-22);
-		game->item_tex[i].addr = mlx_get_data_addr(game->item_tex[i].img,
-				&game->item_tex[i].bpp, &game->item_tex[i].l_len,
-				&game->item_tex[i].endian);
-		if (!(game->item_tex[i].addr))
 			return_error(-22);
 		i++;
 		free(type);

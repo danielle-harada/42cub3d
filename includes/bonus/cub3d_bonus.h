@@ -161,10 +161,6 @@ void	load_life(t_game *game);
 void	free_life(t_game *game);
 void	render_lifebar(t_game *game);
 int		get_color_life(t_tex *life_tex, int life_x, int life_y);
-void	free_item(t_game *game);
-void	render_item(t_game *game);
-void	load_item(t_game *game);
-int		get_color_item(t_tex *item_tex, int item_x, int item_y);
 
 /******************************************************************************
 **	TEXTURES

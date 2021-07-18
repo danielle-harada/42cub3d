@@ -73,7 +73,6 @@ void	set_param(t_game *game)
 	find_sprite_init(game);
 	load_sprite(game);
 	load_life(game);
-	load_item(game);
 	texture_load(game);
 	player_position(game);
 	player_facing(game);

@@ -32,7 +32,6 @@
 # define F_TEX 6
 # define D_TEX 7
 # define LIFE 8
-# define ITEM 9
 # define PI 3.14159265
 # define TWO_PI 6.28316530
 
