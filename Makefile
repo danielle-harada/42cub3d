@@ -135,7 +135,7 @@ $(BONUS_OBJECTS): $(SRC_BONUS) $(BONUS_FILES)
 git:
 	@git add .
 	@git commit -m "$m"
-	@git push
+	@git push origin master
 #make git m="blablabla"
 
 clean:
