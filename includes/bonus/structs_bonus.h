@@ -167,9 +167,7 @@ typedef struct s_game
 	int			open;
 	int			close;
 	int			door;
-	int			item;
 	t_tex		life_tex[4];
-	t_tex		item_tex[7];
 	t_sprite	*sprite;
 	t_data		data;
 	t_tex		*tex;
@@ -182,7 +180,6 @@ typedef struct s_game
 	t_square	square;
 	t_int_coord	pos;
 	t_int_coord	pos_life;
-	t_int_coord	pos_item;
 }				t_game;
 
 #endif
