@@ -28,7 +28,7 @@ int	special_ceiling(t_game *game, int color)
 		color = 0x000000;
 	if (game->life == 0)
 		color = 0x000000;
-	if (game->item == 6 && game->life != 0)
+	if (game->sprite->win == 1 && game->life != 0)
 		color = 0x36b0b4;
 	return (color);
 }

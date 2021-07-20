@@ -37,11 +37,10 @@ void	find_sprite_3_aux1(t_game *game, int i, int j)
 
 void	find_sprite_4(t_game *game, int i, int j)
 {
-	if (game->item < 6 && game->life > 0)
+	if (game->life > 0)
 	{
 		game->file.tab[i][j] = '0';
-		game->sprite->win = 0;
+		//game->sprite->win = 0;
 		game->num_sprite--;
-		game->item++;
 	}
 }
