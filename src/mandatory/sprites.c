@@ -29,7 +29,7 @@ void	draw_sprite(t_game *game, int x, int s_pos, int sp)
 		color = game->tex[SP].addr[y * game->tex[SP].tex_width
 			+ (int)(x * (double)game->tex[SP].tex_height
 				/ (double)game->s_hei)];
-		if (color > 0x00ff00)
+		if (color != 0x00FF01)
 			if (s_pos + x >= 0 && s_pos + x < game->file.width)
 				if (game->ray.dist_wall[x + s_pos] > game->sprite[sp].dist)
 					game->data.addr[start * game->file.width + x + s_pos]

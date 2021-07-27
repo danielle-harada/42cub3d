@@ -1,12 +1,12 @@
 R 1920 1080
-S ./text/walls/greyowl.xpm
-NO ./text/walls/greywall.xpm
-WE ./text/walls/whitewall.xpm
-EA ./text/walls/cement.xpm
-SO ./text/walls/whitestone.xpm
+S ./text/textures/sprites/nemo.xpm
+NO ./text/textures/walls/ocean1.xpm
+WE ./text/textures/walls/ocean2.xpm
+EA ./text/textures/walls/ocean3.xpm
+SO ./text/textures/walls/ocean4.xpm
 
-C 137, 151, 156
-F 46,12,97
+C 10,154,217
+F 112,191,223
 
 111111111111111          11111111
 100000000000001          10000001

@@ -3,11 +3,11 @@
 int	special_wall(t_game *game, int color)
 {
 	if (game->life == 1)
-		color = 0xb48c36;
+		color = 0x2C2C2C;
 	if (game->life == 0)
-		color = 0x3f403f;
+		color = 0x0C0C0D;
 	if (game->sprite->win == 1 && game->life != 0)
-		color = 0xffce66;
+		color = 0x2BC3C9;
 	return (color);
 }
 
@@ -18,7 +18,7 @@ int	special_floor(t_game *game, int color)
 	if (game->life == 0)
 		color = 0x0a0a0a;
 	if (game->sprite->win == 1 && game->life != 0)
-		color = 0x3f1a04;
+		color = 0xACFDFF;
 	return (color);
 }
 
